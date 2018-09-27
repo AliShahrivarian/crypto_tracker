@@ -59,7 +59,7 @@ export default class ProductPrices extends Component {
             }, this.state.errorTimeout);
             return (
                 <div className='col-md-6'>
-                    Oops, Some error occured. Trying within {this.state.errorTimeout} seconds...
+                    Oops, Some error occured. Trying within {this.state.errorTimeout / 1000} seconds...
                 </div>
             );
         }
