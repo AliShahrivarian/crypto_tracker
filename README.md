@@ -2,7 +2,7 @@
 
 ### A test project to communicate and get exchange rate from [Moneeda API](https://moneeda.github.io/docs/)
 
-## Server Side Dependencies
+## Dependencies
 
 ````
 "axios": "^0.18.0",
