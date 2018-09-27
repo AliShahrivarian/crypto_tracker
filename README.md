@@ -1,8 +1,8 @@
 # Crypto Tracker
 
-#### A test project to communicate and get exchange rate from [Moneeda API](https://moneeda.github.io/docs/)
+### A test project to communicate and get exchange rate from [Moneeda API](https://moneeda.github.io/docs/)
 
-##### Server Side Dependencies
+## Server Side Dependencies
 
 ````
 "axios": "^0.18.0",
@@ -16,7 +16,7 @@
 "react-select": "^2.0.0"
 ````
 
-##### Getting Started
+## Getting Started
 You have to install [NodeJS](https://nodejs.org/en/download/package-manager/) at first.
 
 
