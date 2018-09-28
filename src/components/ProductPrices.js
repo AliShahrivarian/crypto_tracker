@@ -10,11 +10,13 @@ export default class ProductPrices extends Component {
             showLoader: true,
             errorTimeout: 0
         }
+        this.errTimeoutFN = undefined
     }
     componentWillMount() {
         this.loadPrices()
     }
     componentWillReceiveProps(nextProps) {
+        clearTimeout(this.errTimeoutFN)
         this.loadPrices()
         this.setState({ showLoader: true })
     }
@@ -54,7 +56,7 @@ export default class ProductPrices extends Component {
     }
     renderPrices() {
         if (this.state.errorOccured) {
-            setTimeout(() => {
+            this.errTimeoutFN = setTimeout(() => {
                 this.loadPrices();
             }, this.state.errorTimeout);
             return (
