@@ -35,7 +35,7 @@ cd crypto_tracker & npm install
 Start Server
 
 ````
-cd server & npm run dev
+npm run dev
 ````
 
 Then browser will open at `localhost:3000`.
